@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,500;0,700;1,600&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  font-family: "Plus Jakarta Sans";
+  min-height: 100vh;
+  display: flex;
+  background-image: url("MacBook Air.png");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.container {
+  max-width: 80vw;
+}
+
+.navbar {
+  transition: 3s;
+  transform: scale(100px);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: lightgray;
+}
+
+.navbar li {
+  list-style-type: none;
+  align-items: center;
+  margin: 0px 5px;
+  color: navy;
+}
+
+.navbar li a {
+  text-decoration: none;
+}
+
+.topleft {
+  width: 50%;
+}
+
+.topright {
+  width: 50%;
+}
+
+/* Content */
+section {
+    animation: left-to-right 1s ease-in forwards;
+}
+
+@keyframes left-to-right {
+    0% {
+        transform: translate(0px);
+    }
+    100% {
+        transform: translate(120px);
+    }
+}
+
+.content {
+  font-weight: 700;
+  font-size: 65px;
+  margin-top: 125px;
+  color: rgb(9, 9, 89);
+}
+
+.btn {
+  height: 70px;
+  width: 140px;
+  box-shadow: 0px 5px 10px 12px rgba(255, 255, 255, 0.5);
+}
+
+.btn:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.reg {
+  color: whitesmoke;
+}
+
+.reg:hover {
+  cursor: pointer;
+  color: antiquewhite;
+  opacity: 1;
+}
+
+.post {
+  color: whitesmoke;
+}
+
+.post:hover {
+  cursor: pointer;
+  color: antiquewhite;
+  opacity: 1;
+}
+
+#btn {
+  height: 40px;
+  box-shadow: none;
+}
